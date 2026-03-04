@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Copyflix</title>
+</head>
+<body>
+    <header class="top-nav">
+        <div class="nav-left">
+         <div class="logo">COPYFLIX</div>
+         <nav class="main-menu">
+         <a href="#" class="active">Início</a>
+         <a href="#">Séries</a>
+         <a href="#">Filmes</a>
+         <a href="#">Bombando</a>
+         <a href="#">Minha lista</a>
+      </nav>
+        </div>
+        <div class="nav-right">
+            <button class="icon-button" aria-label="Buscar">
+             🔎
+            </button>
+            <button class="icon-button" aria-label="Notificações">
+              🔔
+            </button>
+            <div class="profile"></div>
+        </div>
+    </header>
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-background" id="hero-background">
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+              <h1 id="hero-title" class="hero-title">Título em destaque</h1>
+              <p id="hero-overview" class="hero-overview">
+                Sinopse do filme ou série em destaque vai
+                aparecer aqui quando os
+                dados forem carregados da API.
+              </p>
+              <div class="hero-actions">
+               <button class="btn btn-primary">
+                ▶ Assistir
+               </button>
+               <button class="btn btn-secondary">
+                ❕ Mais informações
+               </button>
+              </div>
+              <div class="hero-pagination" id="hero-pagination">
+
+              </div>
+            </div>
+        </section>
+        <section class="rows">
+            <div class="row">
+                <h2 class="row-title">Descubra suas próximas histórias</h2>
+                <div class="row-scroller" id="row-trending">
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="row-title">Séries para maratonar</h2>
+                <div class="row-scroller" id="row-series">
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
