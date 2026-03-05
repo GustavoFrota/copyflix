@@ -133,3 +133,10 @@ main {
     linear-gradient(to top, #000 10%, transparent 60%);
 }
 
+.hero-content {
+     position: relative;
+  z-index: 1;
+  max-width: 40rem;
+  padding: 12vh 3.5vw 3rem;
+}
+
