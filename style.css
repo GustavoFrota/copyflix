@@ -190,3 +190,54 @@ main {
     background-color: rgba(109, 109, 110, 0.5);
     transform: scale(1.02);
 }
+
+.hero-pagination {
+    display: flex;
+    gap: 0.4 rem;
+}
+
+.hero-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-dot.active {
+    width: 18px;
+    background-color: #fff;
+}
+
+.rows {
+    margin-top: -3rem;
+    padding: 0 3.5vw 3rem;
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #000 18%,
+    #000 100%
+    );
+}
+
+.row {
+    margin-bottom: 1.75rem;
+}
+
+.row-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.row-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(130px, 180px);
+    gap: 0.4rem;
+    overflow-x: auto;
+    padding-bottom: 0.6rem;
+    scrollbar-width: thin;
+}
+
+.row-scroller::-webkit-scrollbar {
+    height: 6px;
+}
