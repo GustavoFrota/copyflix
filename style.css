@@ -102,3 +102,15 @@ button {
     border-radius: 4px;
     background: linear-gradient(135deg, #0071eb, #17b8ff);
 }
+
+main {
+    padding-top: 56px;
+}
+
+hero {
+    position: relative;
+    height: 70vh;
+    min-width: 420px;
+    color: #fff;
+    overflow: hidden;
+}
