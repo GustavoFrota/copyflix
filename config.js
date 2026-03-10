@@ -1,4 +1,4 @@
-window.copyflixconfig = {
+window.Copyflixconfig = {
     baseUrl: "https://api.themoviedb.org/3/",
 
     apiKey: "3397ebd7286392e73314a9073a477fac",
