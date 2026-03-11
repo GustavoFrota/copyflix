@@ -1,15 +1,20 @@
-const cfg = window.copyflixconfig || {};
+const cfg = window.Copyflixconfig || {};
 
-async function fetchFromApi(endpoints, params = {}) {
-    if(!cfg.baseUrl || !cfg.apikey) {
+
+async function fetchFromApi(endpoint, params = {}) {
+  
+   // note: property name in config uses camelCase 'apiKey'
+    if (!cfg.baseUrl || !cfg.apiKey) {
         console.warn(
-            "[copyflix] configure 'baseUrl' em confing.js para buscar dados reais da API."
+            "[copyflix] configure 'baseUrl' e 'apiKey' em config.js para buscar dados reais da API."
         );
         return null;
     }
 
     const url = new URL(endpoint, cfg.baseUrl);
-  const search = url.searchParams;
+    const search = url.searchParams;
+      
+    
     
   if (cfg.apiKey) {
     search.set("api_key", cfg.apiKey);
@@ -20,7 +25,7 @@ async function fetchFromApi(endpoints, params = {}) {
   });
 
   try {
-    const res = await fetch(url.toString(), { headers });
+    const res = await fetch(url.toString(), { headers: { "Accept": "application/json" } });
     if (!res.ok) throw new Error("Erro na requisição: " + res.status);
     return await res.json();
   } catch (err) {
