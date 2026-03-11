@@ -159,6 +159,7 @@ async function loadData() {
     renderRow("row-trending", []);
     renderRow("row-series", []);
     renderRow("row-movies", []);
+    renderRow("row-filmes", []);
     return;
   }
 
