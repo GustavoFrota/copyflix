@@ -13,3 +13,11 @@
     --cor-borda: #2a2a2e;
     --fonte: 'Outfit', sans-serif;
 }
+
+body{
+    font-family: var(--fonte);
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.8;
+    min-height: 100vh;
+}
