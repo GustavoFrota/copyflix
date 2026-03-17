@@ -1,3 +1,15 @@
-body {
-    background: linear-gradient(135deg, #0e0c9b, #799ab1);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo: #0f0f12;
+    --cor-texto: #e8e6e3;
+    --cor-destaque: #c9a227;
+    --cor-destaque-hover: #e0b83d;
+    --cor-borda: #2a2a2e;
+    --fonte: 'Outfit', sans-serif;
 }
