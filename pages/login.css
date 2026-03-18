@@ -28,3 +28,13 @@ body{
     padding: 4rem, 2rem, 5rem;
     text-align: center;
 }
+
+input {
+    width: 40%;
+    padding: 16px 20px;
+    margin-bottom: 18px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 15px;
+}
