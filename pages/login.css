@@ -11,6 +11,7 @@
     --cor-destaque: #c9a227;
     --cor-destaque-hover: #e0b83d;
     --cor-borda: #2a2a2e;
+    --cor-button: #d21d1d;
     --fonte: 'Outfit', sans-serif;
 }
 
@@ -37,4 +38,21 @@ input {
     outline: none;
     border-radius: 50px;
     font-size: 15px;
+}
+
+button {
+    width: 35%;
+    padding: 16px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: var(--cor-button);
+    color: white;
 }
